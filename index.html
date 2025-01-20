@@ -10,94 +10,111 @@
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
+            background-color: #f4f4f4;
             color: #333;
         }
 
         header {
-            background: #3f51b5;
+            background-color: #007acc;
             color: white;
-            padding: 20px;
+            padding: 15px;
             text-align: center;
+            font-size: 20px;
+        }
+
+        .main-title {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 24px;
+            color: #007acc;
+            font-weight: bold;
         }
 
         main {
-            padding: 20px;
             max-width: 800px;
-            margin: 0 auto;
-            background: #fff;
-            border-radius: 10px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
 
         h1, h2 {
-            color: #3f51b5;
+            color: #007acc;
         }
 
         section {
             margin-bottom: 20px;
         }
 
-        p {
+        p, ul, li {
             margin: 10px 0;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        code {
+            background: #f0f0f0;
+            padding: 2px 5px;
+            border-radius: 4px;
+            font-family: "Courier New", Courier, monospace;
         }
 
         .home-button {
             display: inline-block;
             margin-top: 20px;
-            padding: 10px 20px;
+            padding: 10px 15px;
             color: white;
-            background-color: #3f51b5;
+            background-color: #007acc;
             text-decoration: none;
             border-radius: 5px;
-            font-size: 16px;
-            transition: background-color 0.3s;
+            font-size: 14px;
+            text-align: center;
         }
 
         .home-button:hover {
-            background-color: #303f9f;
+            background-color: #005999;
         }
 
-        code {
-            background: #f4f4f4;
-            padding: 5px;
-            border-radius: 5px;
-            display: block;
-            margin: 10px 0;
-        }
-
-        footer {
-            text-align: center;
-            margin-top: 20px;
-            padding: 10px;
-            background: #3f51b5;
-            color: white;
+        .highlight {
+            font-weight: bold;
+            color: #007acc;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Bài 7: HTML và Cấu Trúc Trang Web</h1>
+        Bài 7: HTML và Cấu Trúc Trang Web
     </header>
 
+    <div class="main-title">
+        Bài 7: HTML và cấu trúc trang web
+    </div>
+
     <main>
-        <section id="luyen-tap-1">
-            <h2>Luyện tập 1</h2>
-            <p><strong>Tìm ví dụ về phần tử HTML không thể lồng:</strong></p>
-            <p>Phần tử HTML là khái niệm cơ bản của trang HTML. Thông thường, một phần tử được định nghĩa bởi thẻ bắt đầu, thẻ kết thúc và phần nội dung nằm giữa cặp thẻ này.</p>
+        <section>
+            <h2 class="highlight">Luyện tập 1</h2>
             <p><strong>Ví dụ phần tử HTML không thể lồng:</strong></p>
             <ul>
                 <li><code>&lt;head&gt;</code> và <code>&lt;body&gt;</code></li>
-                <li><code>&lt;head&gt;</code> chứa các phần tử có liên quan chung đến toàn bộ trang web.</li>
-                <li><code>&lt;body&gt;</code> chứa tất cả các phần tử còn lại là thông tin của trang web.</li>
             </ul>
+            <p><strong><code>&lt;head&gt;</code>:</strong> chứa các phần tử có liên quan chung đến toàn bộ trang web.</p>
+            <p><strong><code>&lt;body&gt;</code>:</strong> chứa tất cả các phần tử còn lại là thông tin của trang web.</p>
         </section>
 
-        <section id="luyen-tap-2">
-            <h2>Luyện tập 2</h2>
-            <p><strong>Đề bài:</strong> Chọn một văn bản đơn giản, soạn thảo tệp HTML để hiển thị nội dung văn bản đó và vẽ cây thông tin các phần tử HTML của trang web vừa soạn thảo.</p>
-            <p><strong>Lời giải chi tiết:</strong></p>
-            <p>Mã HTML được soạn thảo:</p>
+        <section>
+            <h2 class="highlight">Luyện tập 2</h2>
+            <h3>Trả lời câu hỏi Luyện tập 2 trang 44 SGK Tin học 12 Kết nối tri thức:</h3>
+            <p>Chọn một văn bản đơn giản, soạn thảo tệp HTML để hiển thị nội dung văn bản đó và vẽ cây thông tin các phần tử HTML của trang web vừa soạn thảo.</p>
+            <h3>Phương pháp giải:</h3>
+            <ul>
+                <li>Chọn văn bản muốn soạn thảo.</li>
+                <li>Sử dụng quy tắc HTML để hiển thị nội dung văn bản.</li>
+                <li>Vẽ cây thông tin theo các phần tử HTML vừa viết.</li>
+            </ul>
+            <h3>Lời giải chi tiết:</h3>
             <code>
                 &lt;!DOCTYPE html&gt;<br>
                 &lt;html lang="vi"&gt;<br>
@@ -111,31 +128,9 @@
                 &nbsp;&nbsp;&lt;/body&gt;<br>
                 &lt;/html&gt;
             </code>
-            <p><strong>Cây thông tin:</strong></p>
-            <ul>
-                <li><code>&lt;html&gt;</code>
-                    <ul>
-                        <li><code>&lt;head&gt;</code>
-                            <ul>
-                                <li><code>&lt;meta&gt;</code></li>
-                                <li><code>&lt;title&gt;</code></li>
-                            </ul>
-                        </li>
-                        <li><code>&lt;body&gt;</code>
-                            <ul>
-                                <li><code>&lt;p&gt;</code></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
         </section>
 
         <a href="https://uyenthao-robot.github.io/websitenhom5/" class="home-button">HOME</a>
     </main>
-
-    <footer>
-        <p>&copy; 2025 Bài 7 - HTML và Cấu Trúc Trang Web</p>
-    </footer>
 </body>
 </html>
