@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 7: Luyện tập Trang 44</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(45deg, #2196F3, #64B5F6);
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        section h2 {
+            font-size: 1.8em;
+            color: #2196F3;
+            border-left: 5px solid #2196F3;
+            padding-left: 10px;
+        }
+
+        section p {
+            margin: 10px 0;
+            text-indent: 25px;
+        }
+
+        .examples {
+            background: #E3F2FD;
+            padding: 15px;
+            border-left: 5px solid #42A5F5;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+
+        .examples h3 {
+            margin-top: 0;
+            color: #1565C0;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .return-home {
+            display: block;
+            margin: 30px auto;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            background-color: #42A5F5;
+            color: #fff;
+            font-size: 1.2em;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .return-home:hover {
+            background-color: #1E88E5;
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+            background: #2196F3;
+            color: #fff;
+        }
+
+        footer a {
+            color: #FFEB3B;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Bài 7: HTML và cấu trúc trang web</h1>
+</header>
+
+<main>
+    <section id="luyen-tap-1">
+        <h2>Luyện tập 1</h2>
+        <p><strong>Các phần tử không thể lồng bao gồm:</strong></p>
+        <div class="examples">
+            <p><strong>&lt;html&gt;:</strong> Là phần tử cha nên không thể bị lồng.</p>
+            <p><strong>Giữa &lt;head&gt; và &lt;body&gt;:</strong> 
+                &lt;head&gt; chỉ có thể chứa meta và title, trong khi &lt;body&gt; chứa các thông tin của trang web nên không thể lồng vào nhau.
+            </p>
+        </div>
+    </section>
+
+    <section id="luyen-tap-2">
+        <h2>Luyện tập 2</h2>
+        <p>Cấu trúc hình cây gồm html --> head ( đến meta, title), body ( đến div--> <p>,<a> và <table>.</p>
+         <video controls width="600">
+        <source src="path_to_video.mp4" type="video/mp4">
+         </video>
+    </section>
+
+    <a href="index.html" class="return-home">Quay lại trang chủ</a>
+</main>
+
+<footer>
+    <p>© 2025 Nhóm 5. Liên hệ: <a href="mailto:nhom5@example.com">nhom5@example.com</a></p>
+</footer>
+
+</body>
+</html>
